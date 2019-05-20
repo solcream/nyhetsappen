@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Nyhetslista from './components/Nyhetslista';
+import Nyhetslista from '../src/components/Nyhetslista';
  
 class App extends Component {
   constructor(props) {
@@ -9,12 +8,12 @@ class App extends Component {
   this.state = {
     articles: [
   {
-  urlTomage: "https://source.unsplash.com/random/200*125/?furniture",
+  urlTolmage: "https://source.unsplash.com/random/200*125/?furniture",
   title:  "Testnyhet 1",
   description: "Beskrivning av testnyheten",
   },
   {
-  urlTmage: "https://source.unsplash.com/random/200*125/?furniture",
+  urlTolmage: "https://source.unsplash.com/random/200*125/?furniture",
 title: "Testnyhet 2",
  description: "Beskrivning av den andra testnyheten",
   }]};
