@@ -1,17 +1,16 @@
-import React, { Component } from 'react'; 
-import Nyhetsartikel from'./Nyhetsartikel';
+import React from 'react'; 
+import Nyhetsartikel from  './Nyhetsartikel';
 
 function Nyhetslista (props) {
-    return (<section>
-    {props.minaArtiklar.map(function (item, index) {
-        function (item, index) 
+    return ( <section>
+    {props.minaArtiklar.map (
+        function (item, index) {
             return <Nyhetsartikel
-minArtikel={item} 
-key={`artikel${index }`}
+minArtikel = {item}
+key = {`artikel${index}`} 
 />
     })}
-</section>);
-
+</section>)
 }
 
 export default Nyhetslista;
