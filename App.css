@@ -1,67 +1,36 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width-device=width, initial-scale=1">
-<meta name="keywords" content="">
-<meta name="robots" content="index,follow">
-<meta name="HandheldFriendly" content="true">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-html, body {
-  text-align: center;
-  background: 
-  linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    ),
-  url('/background.jpg') no-repeat center center fixed;
-  background-size: cover;
+.App {
+  text-align : center ;
 }
 
-.Grid {
-  margin: 5%;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
-
-.static-logo {
-  height: 150px;
-  cursor: pointer;
-}
-
-.menu {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 145px;
-  left: 0;
-  right:0;
-  font-weight: 800;
-  font-size: 35px;
-  text-shadow: 0px 0px 5px rgba(0,0,0,0.42);
-  cursor: pointer;
-}
-
-.menu-hidden {
-  visibility: hidden;
+.App-logotyp {
+  animation: App-logo-spin infinite  20 s  linear ;
+  height : 40 vmin ;
+  pointer-events: none ;
 }
 
 .App-header {
-  height: 150px;
-  padding: 20px;
+  background-color: #282c34;
+  min-height: 100 vh;
+  display: flex ;
+  flex-direction: column;
+  align-items: center
+  justify-content center;
+  font-size:  calc (10 px  +  2 vmin);
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-link {
+  color: #61dafb;
 }
-@media only screen and (max-witdh: 600 px) {
-  .App-header {
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    padding: 1rem;
-  }
 
+@keyframes  App-logo-spin {
+  from {
+    transform:  rotate ( 0 degress);
   }
+  from {
+    transform: rotate ( 360 degress );
+  }
+}
 
+
+ 
