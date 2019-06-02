@@ -1,6 +1,6 @@
 import React from 'react'; 
 import Nyhetsartikel from  './Nyhetsartikel';
-
+/*  omslagselement i HTML */
 function Nyhetslista (props) {
     return ( <section className="grid">
     {props.minaArtiklar.map (
@@ -12,5 +12,5 @@ key = {`artikel${index}`}
     })}
 </section>)
 }
-
-export default Nyhetslista;
+/* skapar JavaScript moduler för att exportera funktioner, objekt eller primitiva värden från modulen */ 
+export default Nyhetslista; 
